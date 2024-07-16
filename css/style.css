@@ -1,0 +1,273 @@
+body{
+    background: #f3f3f3;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    max-width: 1170px;
+    margin-top: 5px;
+    padding: 5px 0;
+    width: 60%;
+    display: inline-block;
+}
+
+main{
+    width: 65%;
+    display: inline-block;
+}
+
+.logo-principal{
+    margin: 0 50px;
+}
+
+#texto-principal{
+    width: 680px;
+    height: 380px;
+    margin: 1em 0 0 3em;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color: transparent;
+    font-size: 32px; 
+    box-sizing: border-box;
+    resize: none;
+}
+
+#texto-principal::-webkit-input-placeholder{
+    color: #0A3871;
+    font-size: 32px;
+    vertical-align: top;
+}
+
+#texto-principal:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.atencao{
+    display: flex;
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 1em 0 0 10em ;
+}
+
+.atencao i{
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.atencao p{
+    padding-left: 5px;
+    vertical-align: bottom;
+}
+
+
+.botoes-container{
+    display: inline-block;
+}
+
+
+#criptografar{
+    background: #0A3871;
+    color: #f3f3f3;
+    font-size: 16px; 
+    width: 250px;
+    margin: 1em 0 0 7em;
+    padding: 1em 0;
+    border-radius: 18px;
+    border: #0A3871;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+#descriptografar{
+    background: #D8DFE8;
+    font-size: 16px; 
+    width: 250px;
+    margin: 1em 0 0 7em;
+    padding: 1em 0;
+    border-radius: 18px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+#pesquisando{
+    width: 300px;
+    height: 555px;
+    margin-right: 10%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+    display: inline-block;
+    position: absolute;
+    margin-top: -3%;
+}
+
+.procurando{
+    width: 60%;
+    margin: 5em 0 3em 3.5em;
+    align-items: center;
+}
+
+#resultado{
+    width: 300px;
+    height: 555px;
+    margin-right: 10%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+    display: none;   
+    position: absolute;
+    margin-top: -3%;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+#copiar{
+    background: #D8DFE8;
+    font-size: 16px; 
+    width: 250px;
+    margin: 4.7em 0 0 1.5em;
+    padding: 1em 0;
+    border-radius: 18px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-weight: bold;
+    cursor: pointer;  
+    display: inline-block;
+      
+}
+
+#texto-resultado{
+    width: 270px;
+    height: 380px;
+    margin: 1em 0 0 0.5em;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color: transparent;
+    font-size: 32px; 
+    box-sizing: border-box;
+    resize: none;
+}
+
+footer {
+    max-width: 1170px;
+    padding: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.copyright{
+    display: inline-block;
+    margin: 2em 0 0 2em;
+}
+
+footer .navegacao{    
+    margin: 0 auto;
+}
+
+footer .redes-sociais{
+    display: inline-block;
+    justify-content: center;    
+}
+
+footer .redes-sociais a{
+    display: inline;
+    margin: 0 0 0 100px;
+    font-size: 30px;
+    padding: 10px;
+    width: 65px;
+}
+
+@media screen and (max-width: 900px){
+
+    main{
+        width:100%;
+    }
+
+    #texto-principal{        
+        margin-left: 2em;
+        width: 80%;
+        height: 200px;
+        height: 30vh;
+        justify-content: center;
+    }
+
+    .atencao{
+        display: inline-flex;
+    }
+
+    .botoes-container{
+        width: 100%;
+        height: 80px;               
+        display: inline-flex;
+        margin: 0 auto;
+        justify-content: center;
+        position: relative;
+    }
+
+    #criptografar, #descriptografar{
+        width: 30%;
+        height: 50px;
+        margin-left: 2em;
+    }
+
+    #pesquisando{
+        width: 100%;
+        flex-direction: column;
+        display: inline-flex;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .procurando{
+        width: 60%;
+        height: 50%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    #resultado{
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    #texto-resultado, #copiar{
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    footer{
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        margin: 20px 0 0 0;
+    }
+
+    #navegacao{
+        display: block;
+        justify-content: center;
+    }
+
+    .copyright{
+        display: block;
+        align-items: center;
+        margin-left: 30%;
+    }
+
+    .redes-sociais{
+        margin: 1em 0 0 5%;
+    }
+}

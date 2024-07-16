@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <header>
+            <img src="Imagem/Vector-Desktop.svg" alt="Logo-Alura" class="logo-principal">
+    </header>
+    <main>
+        <section id="texto">
+            <textarea type="text" id="texto-principal" cols="40" rows="10" placeholder="Digite seu texto" spellcheck="false" pattern="[a-zA-Z0-9]+"></textarea>
+        </section>
+        <div class="atencao">
+            <i class="fa">&#xf06a;</i>
+            <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="botoes-container">
+            <button id="criptografar" onclick="criptografar()">Criptografar</button>
+            <button id="descriptografar" onclick="descriptografar()">Descriptografar</button>
+        </div>
+    </main>
+    <section id="pesquisando">
+        <h1>Nenhuma mensagem encontrada</h1>
+        <h2>Digite um texto que você deseja criptografar ou descriptografar.</h2>    
+    </section>
+    <section id="resultado">
+        <textarea type="text" id="texto-resultado" cols="40" rows="10"></textarea> 
+        <button id="copiar" onclick="copiar()">Copiar</button>    
+    </section>
+    <footer>        
+        <nav class="navegacao">
+            <p class="copyright">Feito por Willian Adermon</p>
+        </nav>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" ></script> 
+</body>
+</html>
+
